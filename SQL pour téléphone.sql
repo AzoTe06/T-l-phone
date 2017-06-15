@@ -11,3 +11,6 @@ CREATE TABLE IF NOT EXISTS `user_phonelist` (
   `owner_id` varchar(50) NOT NULL,
   `contact_id` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE `users`
+ADD COLUMN `phone_number` varchar(50) DEFAULT '0';
